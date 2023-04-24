@@ -20,7 +20,7 @@ def result(request):
 
     query = [ph, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic_carbon, Trihalomethanes, Turbidity]
 
-    with open('/home/mitanshudodia/College/dwm/water_quality/base/water_quality_pkl' , 'rb') as f:
+    with open('D:/College/DWM/WQA/water_quality_analysis/base/water_quality_pkl' , 'rb') as f:
         model = pickle.load(f)
     
     prediction = model.predict([query])
